@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.sonarqube' version '3.0'
+}
+
+group 'com.auzeill.github.tools'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.7.0"
+    testImplementation "org.assertj:assertj-core:3.11.1"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+ext {
+    javaMainClass = "com.auzeill.github.tools.ExtractMain"
+}
+
+application {
+    mainClass.set( javaMainClass )
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+}
