@@ -1,7 +1,15 @@
 package com.auzeill.github.tools;
 
+import java.io.IOException;
+
 public class ExtractMain {
-  public static void main(String[] args) {
-    System.out.println("GITHUB_READ_TOKEN: " + System.getenv("GITHUB_READ_TOKEN"));
+
+  private static final String[] NO_ARGS = {};
+
+  public static void main(String[] args) throws IOException, InterruptedException {
+    Step1ExtractGitHubGreatestHits.main(NO_ARGS);
+    Step2FilterOrganization.main(NO_ARGS);
+    Step3JavaClassesPerOrganization.main(NO_ARGS);
   }
+
 }
