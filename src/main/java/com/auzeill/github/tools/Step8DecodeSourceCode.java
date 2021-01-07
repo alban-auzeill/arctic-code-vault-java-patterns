@@ -1,6 +1,8 @@
 package com.auzeill.github.tools;
 
 import com.google.gson.JsonObject;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -23,32 +25,21 @@ public class Step8DecodeSourceCode {
     Map<String, JsonObject> urlContents = Step7DownloadSourceCode.loadUrlContents();
     for (JsonObject json : urlContents.values()) {
       JsonObject data = json.getAsJsonObject("data");
-      String sha = data.getAsJsonPrimitive("sha").getAsString();
-      String packageName = "pkg" + sha;
-      Path packageFolder = SRC_PATH.resolve(packageName);
-      if (!Files.exists(packageFolder)) {
-        String name = data.getAsJsonPrimitive("name").getAsString();
-        System.out.println(name);
+      String htmlUrl = data.getAsJsonPrimitive("html_url").getAsString();
+      Path destFile = localPath(htmlUrl);
+      if (!Files.exists(destFile)) {
+        Files.createDirectories(destFile.getParent());
         String path = data.getAsJsonPrimitive("path").getAsString();
-        String htmlUrl = data.getAsJsonPrimitive("html_url").getAsString();
+        System.out.println(path);
         String encoding = data.getAsJsonPrimitive("encoding").getAsString();
         if (!encoding.equals("base64")) {
           throw new IllegalArgumentException("Unsupported encoding: " + encoding);
         }
         String encodedContent = data.getAsJsonPrimitive("content").getAsString();
         byte[] content = Base64.getDecoder().decode(encodedContent.replaceAll("[\r\n]", ""));
-        Files.createDirectory(packageFolder);
-        Files.writeString(packageFolder.resolve("package-info.java"), "" +
-          "/**\n" +
-          " * url : " + htmlUrl + "\n" +
-          " * path: " + path + "\n" +
-          " * name: " + name + "\n" +
-          " */\n" +
-          "package " + packageName + ";\n", UTF_8);
-
-        Path destFile = packageFolder.resolve(name);
-        Files.write(destFile, content);
+        Files.write(destFile, insertUrlInSourceCode(content, htmlUrl));
       }
+
       /*
        * json example:
        * {
@@ -82,5 +73,69 @@ public class Step8DecodeSourceCode {
        */
     }
 
+  }
+
+  enum CommentState {
+    NO_COMMENT, FIRST_SLASH, LINE_COMMENT, BLOCK_COMMENT, END_STAR
+  }
+
+  private static Path localPath(String htmlUrl) {
+    return SRC_PATH.resolve(Paths.get(htmlUrl
+      .replaceFirst("^https://github\\.com/", "")
+      .replaceFirst("/blob/[0-9a-f]{40}/", "/")
+      .replace('/', File.separatorChar)));
+  }
+
+  private static byte[] insertUrlInSourceCode(byte[] content, String htmlUrl) throws IOException {
+    ByteArrayOutputStream out = new ByteArrayOutputStream();
+    int i = 0;
+    CommentState state = CommentState.NO_COMMENT;
+    while (i < content.length) {
+      byte ch = content[i];
+      if (ch == '/') {
+        switch (state) {
+          case NO_COMMENT:
+            state = CommentState.FIRST_SLASH;
+            break;
+          case FIRST_SLASH:
+            state = CommentState.LINE_COMMENT;
+            break;
+          case END_STAR:
+            state = CommentState.NO_COMMENT;
+            break;
+        }
+      } else if (ch == '*') {
+        switch (state) {
+          case FIRST_SLASH:
+            state = CommentState.BLOCK_COMMENT;
+            break;
+          case BLOCK_COMMENT:
+          case END_STAR:
+            state = CommentState.END_STAR;
+            break;
+        }
+      } else {
+        switch (state) {
+          case FIRST_SLASH:
+            state = CommentState.NO_COMMENT;
+            break;
+          case END_STAR:
+            state = CommentState.BLOCK_COMMENT;
+            break;
+        }
+      }
+      if (ch == '\r' || ch == '\n') {
+        if (state == CommentState.LINE_COMMENT || state == CommentState.BLOCK_COMMENT) {
+          out.write((" copied from " + htmlUrl).getBytes(UTF_8));
+        } else {
+          out.write((" // copied from " + htmlUrl).getBytes(UTF_8));
+        }
+        out.write(content, i, content.length - i);
+        break;
+      }
+      out.write(ch);
+      i++;
+    }
+    return out.toByteArray();
   }
 }
