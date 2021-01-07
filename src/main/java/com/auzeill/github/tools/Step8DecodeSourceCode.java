@@ -8,7 +8,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Base64;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -16,12 +20,13 @@ public class Step8DecodeSourceCode {
 
   public static final Path STEP8_PATH = Paths.get("src", "main", "resources", "step8");
   public static final Path SRC_PATH = STEP8_PATH.resolve("src");
+  private static final Pattern REPOSITORY_REGEX = Pattern.compile("^https://github\\.com/([^/]++/[^/]++)/");
 
   public static void main(String[] args) throws IOException {
     if (!Files.exists(SRC_PATH)) {
       Files.createDirectory(SRC_PATH);
     }
-
+    Map<String, Integer> repositoriesRanking = loadRepositoryRanking();
     Map<String, JsonObject> urlContents = Step7DownloadSourceCode.loadUrlContents();
     for (JsonObject json : urlContents.values()) {
       JsonObject data = json.getAsJsonObject("data");
@@ -37,7 +42,7 @@ public class Step8DecodeSourceCode {
         }
         String encodedContent = data.getAsJsonPrimitive("content").getAsString();
         byte[] content = Base64.getDecoder().decode(encodedContent.replaceAll("[\r\n]", ""));
-        Files.write(destFile, insertUrlInSourceCode(content, htmlUrl));
+        Files.write(destFile, insertUrlInSourceCode(content, htmlUrl, ranking(repositoriesRanking, htmlUrl)));
       }
 
       /*
@@ -75,6 +80,16 @@ public class Step8DecodeSourceCode {
 
   }
 
+  public static Map<String, Integer> loadRepositoryRanking() throws IOException {
+    Map<String, Integer> repositoriesRanking = new HashMap<>();
+    Path repositoriesPath = Step5SortRepositoriesByScore.bestRepositoriesPath("java");
+    List<String> repositories = StringUtils.loadTrimmedList(repositoriesPath);
+    for (int i = 0; i < repositories.size(); i++) {
+      repositoriesRanking.put(repositories.get(i), i + 1);
+    }
+    return repositoriesRanking;
+  }
+
   enum CommentState {
     NO_COMMENT, FIRST_SLASH, LINE_COMMENT, BLOCK_COMMENT, END_STAR
   }
@@ -86,7 +101,23 @@ public class Step8DecodeSourceCode {
       .replace('/', File.separatorChar)));
   }
 
-  private static byte[] insertUrlInSourceCode(byte[] content, String htmlUrl) throws IOException {
+  private static int ranking(Map<String, Integer> repositoriesRanking, String htmlUrl) {
+    int defaultValue = repositoriesRanking.size() + 1;
+    Matcher matcher = REPOSITORY_REGEX.matcher(htmlUrl);
+    if (matcher.find()) {
+      String repository = matcher.group(1);
+      Integer rank = repositoriesRanking.get(repository);
+      if (rank != null) {
+        return rank;
+      }
+      System.out.println("WARN failed to find ranking for " + repository);
+    } else {
+      System.out.println("WARN failed to match repository pattern: " + htmlUrl);
+    }
+    return defaultValue;
+  }
+
+  private static byte[] insertUrlInSourceCode(byte[] content, String htmlUrl, int ranking) throws IOException {
     ByteArrayOutputStream out = new ByteArrayOutputStream();
     int i = 0;
     CommentState state = CommentState.NO_COMMENT;
@@ -125,11 +156,8 @@ public class Step8DecodeSourceCode {
         }
       }
       if (ch == '\r' || ch == '\n') {
-        if (state == CommentState.LINE_COMMENT || state == CommentState.BLOCK_COMMENT) {
-          out.write((" copied from " + htmlUrl).getBytes(UTF_8));
-        } else {
-          out.write((" // copied from " + htmlUrl).getBytes(UTF_8));
-        }
+        String commentPrefix = (state == CommentState.LINE_COMMENT || state == CommentState.BLOCK_COMMENT) ? "" : " //";
+        out.write((commentPrefix + " (rank " + ranking + ") copied from " + htmlUrl).getBytes(UTF_8));
         out.write(content, i, content.length - i);
         break;
       }
