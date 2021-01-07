@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+import static com.auzeill.github.tools.HttpUtils.body;
+
 public class GitHubRestApi {
 
   private static final String RATE_LIMIT_URL = "https://api.github.com/rate_limit";
@@ -31,7 +33,7 @@ public class GitHubRestApi {
   private static int waitForRemainingRequest(String type) throws IOException, InterruptedException {
     int remainingRequest = 0;
     while (remainingRequest == 0) {
-      String body = HttpUtils.body(HttpUtils.githubAPIRequest(RATE_LIMIT_URL));
+      String body = body(HttpUtils.githubAPIRequest(RATE_LIMIT_URL));
       JsonObject json = StringUtils.asJsonObject(body);
       JsonObject property = json.getAsJsonObject("resources").getAsJsonObject(type);
       remainingRequest = property.getAsJsonPrimitive("remaining").getAsInt();
@@ -44,6 +46,10 @@ public class GitHubRestApi {
       }
     }
     return remainingRequest;
+  }
+
+  public static void main(String[] args) throws IOException, InterruptedException {
+    System.out.println(body(HttpUtils.githubAPIRequest(RATE_LIMIT_URL)));
   }
 
 }

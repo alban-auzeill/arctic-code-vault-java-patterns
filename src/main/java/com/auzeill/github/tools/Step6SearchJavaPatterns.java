@@ -72,7 +72,7 @@ public class Step6SearchJavaPatterns {
           urls.add(new JsonPrimitive(url));
         }
         result = new JsonObject();
-        result.add("search-key", new JsonPrimitive(searchKey));
+        result.addProperty("search-key", searchKey);
         result.add("urls", urls);
         searchResult.put(searchKey, result);
         cleanSearchResult.put(searchKey, result);
