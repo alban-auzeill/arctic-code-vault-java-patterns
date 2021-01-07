@@ -16,6 +16,7 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -62,11 +63,17 @@ public final class StringUtils {
   }
 
   public static void saveList(Path path, Collection<String> list) throws IOException {
-    String content = "";
-    if (!list.isEmpty()) {
-      content = String.join("\n", list) + "\n";
+    saveList(path, list.stream());
+  }
+
+  public static void saveList(Path path, Stream<String> stream) throws IOException {
+    StringBuilder out = new StringBuilder();
+    stream.forEach(line -> out.append(line).append('\n'));
+    String content = out.toString();
+    String previousContent = Files.exists(path) ? Files.readString(path, UTF_8) : null;
+    if (!content.equals(previousContent)) {
+      Files.writeString(path, content, UTF_8);
     }
-    Files.writeString(path, content, UTF_8);
   }
 
   public static void appendLine(Path path, String line) throws IOException {
@@ -80,10 +87,10 @@ public final class StringUtils {
   }
 
   public static JsonObject asJsonObject(String json) {
-   return GSON.fromJson(json, JsonObject.class);
+    return GSON.fromJson(json, JsonObject.class);
   }
 
-  public static Set<String> removeLowerCaseOf(Set<String> list, Set<String> lowerCaseElementsToRemove ) {
+  public static Set<String> removeLowerCaseOf(Set<String> list, Set<String> lowerCaseElementsToRemove) {
     Set<String> elements = new TreeSet<>(StringUtils.LOWER_CASE_COMPARATOR);
     for (String element : list) {
       if (!lowerCaseElementsToRemove.contains(element.toLowerCase(Locale.ROOT))) {

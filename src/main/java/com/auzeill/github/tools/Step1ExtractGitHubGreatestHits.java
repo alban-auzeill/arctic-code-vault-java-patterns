@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -30,19 +29,27 @@ public class Step1ExtractGitHubGreatestHits {
     if (!Files.exists(GITHUB_GREATEST_REPOSITORIES_PATH) || !Files.exists(GITHUB_GREATEST_REPOSITORY_OWNERS_PATH)) {
       String body = HttpUtils.body(newTextRequest(SRC_URL));
       Set<String> owners = new TreeSet<>(StringUtils.LOWER_CASE_COMPARATOR);
-      List<String> repositories = StringUtils.trimmedNotEmptyLines(body);
-      for (String line : repositories) {
-        int sep = line.indexOf('/');
-        if (sep > 1) {
-          String owner = line.substring(0, sep);
-          if (owners.add(owner)) {
-            System.out.println(owner);
-          }
+      Set<String> repositories = new TreeSet<>(StringUtils.LOWER_CASE_COMPARATOR);
+      for (String repository : StringUtils.trimmedNotEmptyLines(body)) {
+        if (repository.contains("/")) {
+          repositories.add(repository);
+          String owner = owner(repository);
+          owners.add(owner);
+        } else {
+          System.out.println("ERROR, missing '/' separator in repository: " + repository);
         }
       }
       Files.writeString(GITHUB_GREATEST_REPOSITORIES_PATH, String.join("\n", repositories), UTF_8);
       Files.writeString(GITHUB_GREATEST_REPOSITORY_OWNERS_PATH, String.join("\n", owners), UTF_8);
     }
+  }
+
+  public static String owner(String repository) {
+    int sep = repository.indexOf('/');
+    if (sep < 1) {
+      throw new IllegalStateException("Missing '/' separator in: " + repository);
+    }
+    return repository.substring(0, sep);
   }
 
   public static Set<String> loadGreatestRepositories() throws IOException {

@@ -10,6 +10,7 @@ public class ExtractMain {
     Step1ExtractGitHubGreatestHits.main(NO_ARGS);
     Step2FilterOrganization.main(NO_ARGS);
     Step3JavaClassesPerOrganization.main(NO_ARGS);
+    Step4FilterOrganizationRepositoryWithJava.main(NO_ARGS);
   }
 
 }

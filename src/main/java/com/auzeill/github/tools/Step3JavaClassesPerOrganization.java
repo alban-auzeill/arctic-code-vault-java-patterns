@@ -6,13 +6,11 @@ import java.net.http.HttpResponse;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
-import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-import java.util.stream.Collectors;
 
 import static com.auzeill.github.tools.HttpUtils.body;
 import static com.auzeill.github.tools.HttpUtils.githubAPIRequest;
@@ -75,12 +73,10 @@ public class Step3JavaClassesPerOrganization {
         int valueComp = e1.getValue().compareTo(e2.getValue());
         return valueComp != 0 ? -valueComp : e1.getKey().toLowerCase(Locale.ROOT).compareTo(e2.getKey().toLowerCase(Locale.ROOT));
       };
-      List<String> list = classesPerOrganizationMap.entrySet().stream()
+      StringUtils.saveList(JAVA_CLASSES_PER_ORGANIZATION_PATH, classesPerOrganizationMap.entrySet().stream()
         .filter(e -> !elementToRemove.contains(e.getKey()))
         .sorted(comparator)
-        .map(e -> e.getValue() + ";" + e.getKey())
-        .collect(Collectors.toList());
-      StringUtils.saveList(JAVA_CLASSES_PER_ORGANIZATION_PATH, list);
+        .map(e -> e.getValue() + ";" + e.getKey()));
     }
   }
 
