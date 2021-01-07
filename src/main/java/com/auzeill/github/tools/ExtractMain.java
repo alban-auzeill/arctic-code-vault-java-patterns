@@ -12,6 +12,9 @@ public class ExtractMain {
     Step3JavaClassesPerOrganization.main(NO_ARGS);
     Step4ExtractRepositoriesMetadata.main(NO_ARGS);
     Step5SortRepositoriesByScore.main(NO_ARGS);
+    Step6SearchJavaPatterns.main(NO_ARGS);
+    Step7DownloadSourceCode.main(NO_ARGS);
+    Step8DecodeSourceCode.main(NO_ARGS);
   }
 
 }
