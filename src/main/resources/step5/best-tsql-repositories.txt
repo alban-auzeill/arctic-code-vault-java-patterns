@@ -1,0 +1,3 @@
+BrentOzarULTD/SQL-Server-First-Responder-Kit
+datacharmer/test_db
+lihaoyi/macropy

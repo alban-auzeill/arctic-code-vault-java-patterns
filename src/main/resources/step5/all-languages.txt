@@ -1,0 +1,348 @@
+1C Enterprise
+ABAP
+AGS Script
+AL
+AMPL
+ANTLR
+API Blueprint
+APL
+ASL
+ASP
+ASP.NET
+ATS
+ActionScript
+Ada
+Agda
+Alloy
+AngelScript
+ApacheConf
+Apex
+AppleScript
+Arc
+Arduino
+AspectJ
+Assembly
+Augeas
+AutoHotkey
+AutoIt
+Awk
+Ballerina
+Batchfile
+Bison
+BitBake
+Blade
+BlitzBasic
+Boo
+Brainfuck
+Brightscript
+Bro
+C
+C#
+C++
+CLIPS
+CMake
+COBOL
+CSS
+CWeb
+Cap'n Proto
+CartoCSS
+Ceylon
+Chapel
+ChucK
+Cirru
+Clarion
+Classic ASP
+Clean
+Clojure
+CodeQL
+CoffeeScript
+ColdFusion
+Common Lisp
+Common Workflow Language
+Cool
+Coq
+Crystal
+Csound
+Csound Document
+Cuda
+Cycript
+D
+DIGITAL Command Language
+DM
+DTrace
+Dart
+Dhall
+Dockerfile
+Dogescript
+Dylan
+E
+Eagle
+Eiffel
+Elixir
+Elm
+Emacs Lisp
+EmberScript
+Erlang
+F#
+F*
+FLUX
+Factor
+Fancy
+Fantom
+Faust
+Forth
+Fortran
+FreeMarker
+Frege
+G-code
+GAML
+GAP
+GCC Machine Description
+GDB
+GDScript
+GLSL
+Game Maker Language
+Genie
+Genshi
+Gherkin
+Gnuplot
+Go
+Golo
+Groff
+Groovy
+HCL
+HLSL
+HTML
+Hack
+Haml
+Handlebars
+Harbour
+Haskell
+Haxe
+HiveQL
+HolyC
+Hy
+HyPhy
+IDL
+IGOR Pro
+Idris
+Inform 7
+Inno Setup
+Io
+Ioke
+Isabelle
+J
+JSONiq
+Jasmin
+Java
+JavaScript
+Jsonnet
+Julia
+Jupyter Notebook
+KRL
+Kaitai Struct
+KiCad Layout
+Kit
+Kotlin
+LFE
+LLVM
+LOLCODE
+LSL
+Lasso
+Latte
+Lean
+Less
+Lex
+LilyPond
+Limbo
+Liquid
+LiveScript
+Logos
+Logtalk
+Lua
+M
+M4
+MATLAB
+MAXScript
+MLIR
+MQL5
+Makefile
+Mako
+Markdown
+Marko
+Mask
+Mathematica
+Max
+Mercury
+Meson
+Metal
+Mirah
+Modelica
+Modula-2
+Modula-3
+Module Management System
+Moocode
+MoonScript
+Myghty
+NASL
+NSIS
+NWScript
+Nearley
+Nemerle
+NewLisp
+Nginx
+Nim
+Nit
+Nix
+Nu
+OCaml
+ObjectScript
+Objective-C
+Objective-C++
+Objective-J
+Odin
+Omgrofl
+Opa
+Open Policy Agent
+OpenEdge ABL
+OpenQASM
+OpenSCAD
+Oz
+P4
+PHP
+PLSQL
+PLpgSQL
+POV-Ray SDL
+Parrot
+Pascal
+Pawn
+Perl
+Perl 6
+PicoLisp
+PigLatin
+Pike
+Pony
+PostScript
+PowerBuilder
+PowerShell
+Processing
+Prolog
+Protocol Buffer
+Pug
+Puppet
+PureBasic
+PureScript
+Python
+Q#
+QML
+QMake
+Qt Script
+R
+RAML
+REXX
+RPC
+Racket
+Ragel
+Ragel in Ruby Host
+Raku
+Rascal
+ReScript
+Reason
+Rebol
+Red
+Redcode
+Ren'Py
+RenderScript
+Rich Text Format
+Ring
+Riot
+RobotFramework
+Roff
+Ruby
+Rust
+SAS
+SCSS
+SMT
+SQF
+SQLPL
+SRecode Template
+SWIG
+Sage
+SaltStack
+Sass
+Scala
+Scheme
+Scilab
+Self
+ShaderLab
+Shell
+Shen
+Sieve
+Slash
+Slice
+Slim
+SmPL
+Smali
+Smalltalk
+Smarty
+Solidity
+SourcePawn
+Squirrel
+Stan
+Standard ML
+Starlark
+Stata
+Stylus
+SuperCollider
+Svelte
+Swift
+SystemVerilog
+TLA
+TSQL
+Tcl
+TeX
+Tea
+Terra
+Thrift
+Turing
+Twig
+TypeScript
+Uno
+UnrealScript
+UrWeb
+V
+VBA
+VBScript
+VCL
+VHDL
+Vala
+Verilog
+Vim Snippet
+Vim script
+Visual Basic
+Visual Basic .NET
+Volt
+Vue
+WebAssembly
+WebIDL
+XC
+XML
+XProc
+XQuery
+XS
+XSLT
+Xtend
+YAML
+YARA
+YASnippet
+Yacc
+Zeek
+Zephir
+Zig
+eC
+mIRC Script
+nesC
+ooc
+q
+sed
+xBase

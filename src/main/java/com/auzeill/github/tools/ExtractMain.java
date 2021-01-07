@@ -11,6 +11,7 @@ public class ExtractMain {
     Step2FilterOrganization.main(NO_ARGS);
     Step3JavaClassesPerOrganization.main(NO_ARGS);
     Step4ExtractRepositoriesMetadata.main(NO_ARGS);
+    Step5SortRepositoriesByScore.main(NO_ARGS);
   }
 
 }
