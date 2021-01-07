@@ -28,6 +28,7 @@ visgl/deck.gl
 ampproject/amphtml
 Automattic/wp-calypso
 babel/babel
+vercel/next.js
 parse-community/parse-server
 Reactive-Extensions/RxJS
 gatsbyjs/gatsby
@@ -236,6 +237,7 @@ statsd/statsd
 validatorjs/validator.js
 mozilla/send
 google/lovefield
+vercel/pkg
 sdc-alibaba/SUI-Mobile
 GeekyAnts/NativeBase
 marktext/marktext
@@ -298,6 +300,7 @@ mrdoob/three.js
 naptha/tesseract.js
 BrowserSync/browser-sync
 vega/vega
+zotero/zotero
 browserify/browserify
 Netflix/vector
 exceljs/exceljs
@@ -484,6 +487,7 @@ appcelerator/KitchenSink
 huiyan-fe/mapv
 parse-community/parse-dashboard
 downshift-js/downshift
+zeroclipboard/zeroclipboard
 rawgraphs/raw
 axa-group/Parsr
 ant-design/ant-design-landing
@@ -639,6 +643,7 @@ krakenjs/kraken-js
 datejs/Datejs
 orbitdb/orbit-db
 Addepar/ember-table
+oauthjs/node-oauth2-server
 TargetProcess/tauCharts
 standard-things/esm
 storesafe/cordova-sqlite-storage
@@ -803,8 +808,10 @@ nteract/hydrogen
 ElemeFE/v-charts
 airbnb/hypernova
 FormidableLabs/nodejs-dashboard
+OctoLinker/OctoLinker
 tildeio/htmlbars
 GoogleChrome/lighthouse-ci
+yued-fe/lulu
 filamentgroup/loadCSS
 jbaysolutions/vue-grid-layout
 gothinkster/react-redux-realworld-example-app
@@ -831,6 +838,7 @@ babel/babel-sublime
 node-webot/wechat-api
 harc/ohm
 sitespeedio/sitespeed.io
+zedapp/zed
 yahoo/fluxible
 openaddresses/openaddresses
 react-dropzone/react-dropzone
@@ -896,6 +904,7 @@ postaljs/postal.js
 go-shiori/shiori
 adam-p/markdown-here
 webrtc/apprtc
+vercel/styled-jsx
 madebysource/lesshat
 preactjs/preact-cli
 sanctuary-js/sanctuary
@@ -963,6 +972,7 @@ babel/babylon
 Moeditor/Moeditor
 helpers/handlebars-helpers
 js-org/js.org
+vercel/ncc
 microjs/microjs.com
 CartoDB/odyssey.js
 istanbuljs/nyc
@@ -1034,6 +1044,7 @@ qTip2/qTip2
 vuejs/cn.vuejs.org
 zhihu/griffith
 AutoPiano/AutoPiano
+octokit/rest.js
 final-form/final-form
 LearnBoost/cluster
 styletron/styletron
@@ -1092,6 +1103,7 @@ muaz-khan/WebRTC-Experiment
 ElemeFE/cooking
 react-component/calendar
 react-guide/redux-tutorial-cn
+zhaoolee/ChromeAppHeroes
 speakeasyjs/speakeasy
 caolan/async
 esdoc/esdoc
@@ -1190,6 +1202,7 @@ eduardolundgren/tracking.js
 Tencent/QMUI_Web
 salesforce/tough-cookie
 juliangarnier/anime
+zingchart/zingtouch
 cowbell/sharedrop
 we-plugin/we-cropper
 metafizzy/packery
@@ -1232,11 +1245,13 @@ jashkenas/backbone
 iamkun/dayjs
 EventSource/eventsource
 mozilla/fathom
+zadam/trilium
 DmitryBaranovskiy/raphael
 bee-queue/bee-queue
 video-react/video-react
 Foliotek/Croppie
 bigspaceship/shine.js
+zloirock/core-js
 reactjs/react-tabs
 db-migrate/node-db-migrate
 glorious-codes/glorious-demo
@@ -1302,6 +1317,7 @@ jaredhanson/passport
 aui/art-template
 benweet/stackedit
 liabru/matter-js
+zhukov/webogram
 estools/estraverse
 4Catalyzer/astroturf
 marcotcr/lime
@@ -1310,6 +1326,7 @@ RubyLouvre/avalon
 philc/vimium
 kartik-v/bootstrap-fileinput
 istanbuljs/istanbuljs
+zuiidea/antd-admin
 react-component/animate
 aFarkas/html5shiv
 cubiq/iscroll
@@ -1438,6 +1455,7 @@ kenperlin/chalktalk
 STRML/react-grid-layout
 JosephusPaye/Keen-UI
 chjj/blessed
+zensh/jsgen
 travist/jsencrypt
 gorhill/uMatrix
 d3/d3-format
@@ -1446,12 +1464,15 @@ schteppe/cannon.js
 webpack-contrib/stylus-loader
 Eonasdan/tempus-dominus
 lllyasviel/style2paints
+yuche/vue-strap
 One-com/one-color
 ballercat/walt
 unconed/TermKit
 brianchirls/Seriously.js
 gotwarlost/istanbul
+zalmoxisus/redux-devtools-extension
 ljianshu/Blog
+zzmp/juliusjs
 acdlite/recompose
 MrSwitch/hello.js
 mgonto/restangular
@@ -1484,6 +1505,7 @@ webpack-contrib/imports-loader
 breakwa11/gfw_whitelist
 dimsemenov/Magnific-Popup
 oliver-moran/jimp
+ziahamza/webui-aria2
 bevacqua/dragula
 jipegit/OSXAuditor
 nondanee/UnblockNeteaseMusic
@@ -1608,6 +1630,7 @@ fzaninotto/uptime
 jshttp/negotiator
 jprichardson/node-fs-extra
 keithwhor/nodal
+zxlie/FeHelper
 khanhas/spicetify-cli
 dtao/lazy.js
 krisk/Fuse
@@ -1702,6 +1725,7 @@ KartikTalwar/gmail.js
 peterramsing/lost
 KELiON/cerebro
 wesbos/Advanced-React
+Ziv-Barber/officegen
 cure53/DOMPurify
 stefanpenner/es6-promise
 drichard/mindmaps
@@ -1746,6 +1770,7 @@ trentm/node-bunyan
 kriskowal/gtor
 secgroundzero/warberry
 nervgh/angular-file-upload
+yujiosaka/headless-chrome-crawler
 veltman/flubber
 soulwire/sketch.js
 smalot/bootstrap-datetimepicker
@@ -1839,7 +1864,9 @@ lorenwest/node-config
 coresmart/persistencejs
 BorisMoore/jquery-tmpl
 raineorshine/npm-check-updates
+ocombe/ocLazyLoad
 lancedikson/bowser
+zcbenz/nw-sample-apps
 gildas-lormeau/zip.js
 mxstbr/sharingbuttons.io
 langren1353/GM_script
@@ -1886,6 +1913,7 @@ happypoulp/redux-tutorial
 retspen/webvirtmgr
 squaremo/amqp.node
 greasemonkey/greasemonkey
+zaach/jison
 techpines/express.io
 vincentriemer/react-native-dom
 chandlerprall/Physijs
@@ -1901,6 +1929,7 @@ Rob--W/cors-anywhere
 benoitvallon/computer-science-in-javascript
 developit/htm
 soliury/noder-react-native
+zythum/mama2
 sigalor/whatsapp-web-reveng
 mcollina/autocannon
 michaelbromley/angularUtils
@@ -2006,11 +2035,13 @@ lrsjng/h5ai
 mathiasbynens/he
 gaearon/overreacted.io
 princejwesley/Mancy
+yuanyan/halogen
 tcorral/Design-Patterns-in-Javascript
 marioizquierdo/jquery.serializeJSON
 spite/ccapture.js
 cyrus-and/chrome-remote-interface
 carloscuesta/gitmoji
+objectivehtml/FlipClock
 sdras/array-explorer
 MohammadYounes/AlertifyJS
 shentao/vue-multiselect
@@ -2042,6 +2073,7 @@ dleitee/strman
 ctrlplusb/react-universally
 Twipped/Kalendae
 boo1ean/casual
+officert/mongotron
 joefitzgerald/go-plus
 fnando/i18n-js
 diegonetto/generator-ionic
@@ -2059,6 +2091,7 @@ mscdex/node-imap
 ciaranj/node-oauth
 rigoneri/syte
 mbenford/ngTagsInput
+sindresorhus/ky
 Bogdan-Lyashenko/codecrumbs
 caolan/jam
 nkrode/RedisLive
@@ -2086,6 +2119,7 @@ galaxykate/tracery
 iammapping/wedding
 jakearchibald/svgomg
 h2non/toxy
+ZijianHe/koa-router
 MrNothing/AI-Blocks
 danielstjules/jsinspect
 fabiospampinato/cash
@@ -2124,11 +2158,13 @@ Vestride/Shuffle
 PaulUithol/Backbone-relational
 jonthornton/jquery-timepicker
 dessant/buster
+sindresorhus/np
 DWilliames/paddy-sketch-plugin
 amoffat/bootstrap-application-wizard
 pyllyukko/user.js
 kswedberg/jquery-smooth-scroll
 thednp/kute.js
+zemirco/json2csv
 Subash/Prepros
 hiroppy/fusuma
 xiangyuecn/AreaCity-JsSpider-StatsGov
@@ -2236,6 +2272,7 @@ faceyspacey/redux-first-router
 mscdex/busboy
 johnpolacek/superscrollorama
 jossmac/react-images
+zkat/npx
 alexfernandez/loadtest
 danmactough/node-feedparser
 ai/size-limit
@@ -2291,6 +2328,7 @@ jfhbrook/node-ecstatic
 aholachek/mobile-first-animation
 dcodeIO/long.js
 carloscuesta/gitmoji-cli
+arqex/react-datetime
 inexorabletash/text-encoding
 suguru03/neo-async
 JustinTulloss/zeromq.node

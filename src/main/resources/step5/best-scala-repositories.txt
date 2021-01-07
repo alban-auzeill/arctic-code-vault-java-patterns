@@ -26,6 +26,7 @@ twitter/util
 twitter/finatra
 twitter/algebird
 delta-io/delta
+zio/zio
 twitter/summingbird
 spark-jobserver/spark-jobserver
 slick/slick

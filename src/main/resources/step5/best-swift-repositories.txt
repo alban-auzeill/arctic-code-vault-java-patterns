@@ -38,6 +38,7 @@ ScottLogic/iOS8-day-by-day
 apple/sourcekit-lsp
 exyte/Macaw
 Haneke/HanekeSwift
+objcio/app-architecture
 SwiftGen/SwiftGen
 apollographql/apollo-ios
 artsy/eidolon
@@ -64,14 +65,17 @@ Yalantis/Koloda
 FolioReader/FolioReaderKit
 linkedin/LayoutKit
 Clipy/Clipy
+OAuthSwift/OAuthSwift
 SwipeCellKit/SwipeCellKit
 httpswift/swifter
 willowtreeapps/spruce-ios
+Yummypets/YPImagePicker
 xi-editor/xi-mac
 hyperoslo/ImagePicker
 airbnb/MagazineLayout
 Quick/Nimble
 Orderella/PopupDialog
+Zewo/Zewo
 EFPrefix/EFQRCode
 SoySauceLab/CollectionKit
 bustoutsolutions/siesta
@@ -119,6 +123,7 @@ stencilproject/Stencil
 onevcat/Kingfisher
 netguru/ResponseDetective
 mattneub/Programming-iOS-Book-Examples
+ochococo/Design-Patterns-In-Swift
 GitHawkApp/MessageViewController
 ioscreator/ioscreator
 MengTo/Spring
@@ -166,6 +171,7 @@ pNre/ExSwift
 bizz84/SwiftyStoreKit
 analogcode/Swift-Radio-Pro
 hrscy/TodayNews
+zhuhaow/NEKit
 philackm/ScrollableGraphView
 Ahmed-Ali/JSONExport
 mamaral/Neon
@@ -199,6 +205,7 @@ mattdonnelly/Swifter
 scinfu/SwiftSoup
 austinzheng/swift-2048
 shu223/iOS-9-Sampler
+zixun/GodEye
 SCENEE/FloatingPanel
 rechsteiner/Parchment
 sergdort/CleanArchitectureRxSwift
@@ -236,6 +243,7 @@ daltoniam/SwiftHTTP
 ddddxxx/LyricsX
 PaoloCuscela/Cards
 JadenGeller/Helium
+ytakzk/Fusuma
 nvzqz/FileKit
 yannickl/DynamicColor
 jpsim/SourceKitten
@@ -251,6 +259,7 @@ hkellaway/Gloss
 Dimillian/SwiftHN
 matthewpalmer/Locksmith
 Awalz/SwiftyCam
+zenangst/Hue
 loregr/LGButton
 suzuki-0000/SKPhotoBrowser
 DianQK/TransitionTreasury
@@ -279,6 +288,7 @@ SebastianBoldt/Jelly
 jflinter/Dwifft
 mortenjust/droptogif
 Danie1s/Tiercel
+zhxnlai/ZLSwipeableViewSwift
 remirobert/Dotzu
 evgenyneu/keychain-swift
 tid-kijyun/Kanna

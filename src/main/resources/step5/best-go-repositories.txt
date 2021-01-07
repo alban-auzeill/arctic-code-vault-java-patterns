@@ -386,6 +386,7 @@ vuvuzela/vuvuzela
 containers/buildah
 census-instrumentation/opencensus-go
 smartystreets/goconvey
+zentures/surgemq
 Qihoo360/poseidon
 arduino/arduino-cli
 eyebluecn/tank
@@ -539,6 +540,7 @@ flike/kingshard
 olivere/elastic
 buger/goreplay
 eolinker/goku-api-gateway
+zyedidia/micro
 txthinking/brook
 lucas-clemente/quic-go
 lxn/walk
@@ -571,6 +573,7 @@ spf13/viper
 travisjeffery/jocko
 gizak/termui
 Jeffail/benthos
+odeke-em/drive
 chrislusf/gleam
 syndtr/goleveldb
 jmoiron/sqlx
@@ -599,6 +602,7 @@ chanxuehong/wechat
 kelseyhightower/confd
 bcicen/ctop
 OJ/gobuster
+yudai/gotty
 claudiodangelis/qrcp
 onsi/ginkgo
 jung-kurt/gofpdf
@@ -618,6 +622,7 @@ dgrijalva/jwt-go
 Terry-Mao/gopush-cluster
 asciimoo/wuzz
 andlabs/ui
+zxh0/jvm.go
 maxence-charriere/go-app
 rivo/tview
 MichaelMure/git-bug
@@ -643,10 +648,13 @@ asticode/go-astilectron
 googollee/go-socket.io
 jroimartin/gocui
 coyove/goflyway
+zenazn/goji
 DisposaBoy/GoSublime
 buger/jsonparser
+yuin/gopher-lua
 jackc/pgx
 russross/blackfriday
+zricethezav/gitleaks
 shazow/ssh-chat
 pquerna/ffjson
 markbates/goth
@@ -715,6 +723,7 @@ simeji/jid
 mholt/timeliner
 caffix/amass
 h2non/imaginary
+yunabe/lgo
 ouqiang/gocron
 pierrre/imageserver
 iamduo/workq
@@ -769,6 +778,7 @@ alecthomas/participle
 Humpheh/goboy
 mgechev/revive
 variadico/noti
+zquestz/s
 kabukky/journey
 asobti/kube-monkey
 awnumar/memguard

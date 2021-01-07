@@ -43,6 +43,7 @@ PHPOffice/PHPWord
 salesagility/SuiteCRM
 mautic/mautic
 squizlabs/PHP_CodeSniffer
+octobercms/october
 roundcube/roundcubemail
 dompdf/dompdf
 codeigniter4/CodeIgniter4
@@ -61,6 +62,7 @@ firefly-iii/firefly-iii
 pmmp/PocketMine-MP
 dingo/api
 pagekit/pagekit
+YOURLS/YOURLS
 osTicket/osTicket
 twigphp/Twig
 swiftmailer/swiftmailer
@@ -84,6 +86,7 @@ phalcon/zephir
 facebookarchive/facebook-php-sdk
 webonyx/graphql-php
 cakephp/phinx
+ZoneMinder/zoneminder
 phpseclib/phpseclib
 thephpleague/flysystem
 typecho/typecho
@@ -230,6 +233,7 @@ doctrine/cache
 symfony/http-kernel
 symfony/form
 phpDocumentor/TypeResolver
+zendframework/zend-diactoros
 silexphp/Pimple
 php-school/cli-menu
 maxmind/GeoIP2-php
@@ -237,6 +241,7 @@ thephpleague/glide
 lexik/LexikJWTAuthenticationBundle
 orchidsoftware/platform
 FriendsOfPHP/Sami
+zendframework/zend-code
 symfony/symfony-standard
 guzzle/promises
 cocur/slugify
@@ -272,6 +277,7 @@ symfony/monolog-bundle
 sebastianbergmann/phpunit
 VentureCraft/revisionable
 hamcrest/hamcrest-php
+zendframework/zend-eventmanager
 symfony/serializer
 spatie/browsershot
 symfony/translation
@@ -306,6 +312,7 @@ serbanghita/Mobile-Detect
 nikic/PHP-Parser
 astralapp/astral
 symfony/expression-language
+z-song/laravel-admin
 snipe/snipe-it
 barryvdh/laravel-ide-helper
 doctrine/reflection
@@ -331,8 +338,10 @@ baijunyao/thinkphp-bjyadmin
 barryvdh/laravel-debugbar
 benedmunds/CodeIgniter-Ion-Auth
 avalanche123/Imagine
+Zizaco/entrust
 isohuntto/openbay
 digininja/DVWA
+zyx0814/dzzoffice
 vlucas/phpdotenv
 bcosca/fatfree
 WhatCD/Gazelle
@@ -345,6 +354,7 @@ gabordemooij/redbean
 ThingEngineer/PHP-MySQLi-Database-Class
 lcobucci/jwt
 panique/huge
+zoujingli/ThinkAdmin
 causefx/Organizr
 ruflin/Elastica
 Hanson/vbot
@@ -357,6 +367,7 @@ bobthecow/mustache.php
 andersao/l5-repository
 Audi-1/sqli-labs
 erusev/parsedown
+zircote/swagger-php
 yajra/laravel-datatables
 aimeos/aimeos-laravel
 ezyang/htmlpurifier
@@ -367,6 +378,7 @@ abraham/twitteroauth
 mrclay/minify
 yansongda/pay
 lucadegasperi/oauth2-server-laravel
+Ocramius/ProxyManager
 irazasyed/telegram-bot-sdk
 Crinsane/LaravelShoppingcart
 mikecao/flight

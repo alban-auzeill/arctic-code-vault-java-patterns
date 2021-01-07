@@ -104,6 +104,7 @@ scrapy/scrapely
 samdutton/simpl
 RayTracing/InOneWeekend
 django-admin-bootstrapped/django-admin-bootstrapped
+zhangkaitao/shiro-example
 coolwanglu/pdf2htmlEX
 asadoughi/stat-learning
 tpn/pdfs
@@ -165,6 +166,7 @@ pikock/bootstrap-magic
 mixu/singlepageappbook
 davidstutz/bootstrap-multiselect
 jlord/git-it
+zTree/zTree_v3
 TedGoas/Cerberus
 pointbiz/bitaddress.org
 puikinsh/Adminator-admin-dashboard

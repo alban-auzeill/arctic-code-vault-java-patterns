@@ -25,6 +25,7 @@ apache/incubator-brpc
 telegramdesktop/tdesktop
 facebook/hhvm
 aria2/aria2
+yuzu-emu/yuzu
 Tencent/mars
 ClickHouse/ClickHouse
 google/googletest
@@ -148,6 +149,7 @@ SpiderLabs/ModSecurity
 qbittorrent/qBittorrent
 rizinorg/cutter
 duilib/duilib
+zcash/zcash
 NVIDIA/TensorRT
 tdlib/td
 juce-framework/JUCE
@@ -201,6 +203,7 @@ includeos/IncludeOS
 clementine-player/Clementine
 facebookresearch/faiss
 IntelRealSense/librealsense
+OGRECave/ogre
 anbox/anbox
 panda3d/panda3d
 Tencent/phxsql
@@ -218,6 +221,7 @@ arrayfire/arrayfire
 facebookincubator/LogDevice
 wesnoth/wesnoth
 OpenTTD/OpenTTD
+zealdocs/zeal
 olive-editor/olive
 zerotier/ZeroTierOne
 gnuradio/gnuradio
@@ -244,6 +248,7 @@ slic3r/Slic3r
 Project-OSRM/osrm-backend
 cocos2d/cocos2d-js
 openscad/openscad
+zeek/zeek
 NVIDIA/thrust
 sass/libsass
 xdspacelab/openvslam
@@ -264,6 +269,7 @@ Squirrel/Squirrel.Windows
 oatpp/oatpp
 WebAssembly/wabt
 open-source-parsers/jsoncpp
+official-stockfish/Stockfish
 ValveSoftware/openvr
 mapnik/mapnik
 The-Powder-Toy/The-Powder-Toy
@@ -319,6 +325,7 @@ google/benchmark
 TranslucentTB/TranslucentTB
 NixOS/nix
 facebook/wdt
+oclint/oclint
 facebookresearch/TensorComprehensions
 clab/dynet
 cvxgrp/cvxpy
@@ -335,6 +342,7 @@ helio-fm/helio-workstation
 lynckia/licode
 facebook/wangle
 facebookarchive/xcbuild
+znc/znc
 NVIDIA/DALI
 alibaba/euler
 mltframework/shotcut
@@ -342,6 +350,7 @@ yedf/handy
 Kurento/kurento-media-server
 apache/singa
 CppCon/CppCon2015
+Arduino-IRremote/Arduino-IRremote
 alibaba/AndFix
 jvm-profiling-tools/async-profiler
 apache/incubator-pagespeed-ngx
@@ -376,6 +385,7 @@ gosu/gosu
 nlohmann/json
 davisking/dlib
 tinyobjloader/tinyobjloader
+ocornut/imgui
 cpp-netlib/cpp-netlib
 Tencent/Hardcoder
 weolar/miniblink49
@@ -426,6 +436,7 @@ huihut/interview
 bkaradzic/bgfx
 doitsujin/dxvk
 rubyjs/therubyracer
+zaphoyd/websocketpp
 Nevcairiel/LAVFilters
 arvidn/libtorrent
 wang-bin/QtAV
@@ -447,6 +458,7 @@ endless-sky/endless-sky
 ketoo/NoahGameFrame
 rovo89/Xposed
 lltcggie/waifu2x-caffe
+zhongyang219/TrafficMonitor
 kripken/ammo.js
 butor/blackbird
 turanszkij/WickedEngine
@@ -480,12 +492,15 @@ jbeder/yaml-cpp
 Aloshi/EmulationStation
 idea4good/GuiLite
 tstack/lnav
+yyzybb537/libgo
 wheybags/freeablo
 ipkn/crow
 gaoxiang12/slambook
 hluk/CopyQ
 aksnzhy/xlearn
+zeux/pugixml
 tomlooman/EpicSurvivalGameSeries
+oguzhaninan/Stacer
 gatieme/CodingInterviews
 HowardHinnant/date
 leethomason/tinyxml2
@@ -497,6 +512,7 @@ amzeratul/halley
 kitao/pyxel
 changkun/modern-cpp-tutorial
 gzc/CLRS
+zhedahht/CodingInterviewChinese2
 pezy/LeetCode
 kyleneideck/BackgroundMusic
 pavel-odintsov/fastnetmon
@@ -522,6 +538,7 @@ clangen/musikcube
 wangyu-/UDPspeeder
 HuTianQi/SmartOpenCV
 tzapu/WiFiManager
+zeux/meshoptimizer
 eidheim/Simple-Web-Server
 miguelbalboa/rfid
 justadudewhohacks/opencv4nodejs

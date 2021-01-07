@@ -30,6 +30,7 @@ F-Stack/f-stack
 nodemcu/nodemcu-firmware
 openresty/openresty
 curl/curl
+obsproject/obs-studio
 systemd/systemd
 mpv-player/mpv
 qmk/qmk_firmware
@@ -38,6 +39,7 @@ qemu/qemu
 alibaba/tengine
 zephyrproject-rtos/zephyr
 deepmind/lab
+openzfs/zfs
 videolan/vlc
 n64decomp/sm64
 SoftEtherVPN/SoftEtherVPN
@@ -136,6 +138,7 @@ HandBrake/HandBrake
 littlekernel/lk
 ish-app/ish
 lxc/lxc
+webview/webview
 session-replay-tools/tcpcopy
 go-vgo/robotgo
 libusb/libusb
@@ -175,6 +178,7 @@ seL4/seL4
 gnea/grbl
 lua/lua
 weechat/weechat
+zmap/zmap
 facebookarchive/libphenom
 hexchat/hexchat
 flatpak/flatpak
@@ -216,13 +220,16 @@ htacg/tidy-html5
 FFTW/fftw3
 microsoft/mimalloc
 seclab-ucr/INTANG
+ZipArchive/ZipArchive
 Meituan-Dianping/DBProxy
 google/honggfuzz
 mit-pdos/xv6-public
 nginx/unit
 Rdatatable/data.table
+zsh-users/zsh
 pygame/pygame
 json-c/json-c
+ZBar/ZBar
 facebookarchive/flashcache
 robotmedia/RMStore
 concurrencykit/ck
@@ -332,6 +339,7 @@ memononen/nanovg
 cfenollosa/os-tutorial
 merbanan/rtl_433
 iliasam/OpenSimpleLidar
+yourtion/30dayMakeOS
 acassen/keepalived
 matz/streem
 mackyle/sqlite
@@ -357,6 +365,7 @@ martin-ger/esp_wifi_repeater
 miloyip/json-tutorial
 jacksonliam/mjpg-streamer
 pervognsen/bitwise
+octalmage/robotjs
 orangeduck/Cello
 axboe/fio
 nonstriater/Learn-Algorithms
@@ -404,6 +413,7 @@ microshow/RxFFmpeg
 probablycorey/wax
 chjj/compton
 guillaumechereau/goxel
+yrutschle/sslh
 buaazp/zimg
 darkk/redsocks
 keendreams/keen
@@ -450,6 +460,7 @@ p-gen/smenu
 karlstav/cava
 tsl0922/ttyd
 answer-huang/dSYMTools
+ohler55/oj
 vivien/i3blocks
 jonashaag/bjoern
 xoreaxeaxeax/rosenbridge

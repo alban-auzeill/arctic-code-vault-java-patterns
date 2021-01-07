@@ -32,6 +32,7 @@ mutualmobile/MMDrawerController
 Grouper/FlatUIKit
 facebookarchive/origami
 core-plot/core-plot
+zxingify/zxingify-objc
 facebookarchive/SocketRocket
 yapstudios/YapDatabase
 kif-framework/KIF
@@ -76,6 +77,7 @@ TumblrArchive/TMCache
 spotify/HubFramework
 IFTTT/JazzHands
 SBJson/SBJson
+octokit/octokit.objc
 douban/DOUAudioStreamer
 ReactiveCocoa/ReactiveObjC
 google/santa
@@ -158,6 +160,7 @@ Kapeli/Dash-iOS
 onevcat/VVDocumenter-Xcode
 tomaz/appledoc
 nicklockwood/iCarousel
+youngsoft/MyLinearLayout
 kevinzhow/PNChart
 xhzengAIB/MessageDisplayKit
 vicc/Chameleon
@@ -182,6 +185,7 @@ graphsketcher/GraphSketcher
 hackiftekhar/IQKeyboardManager
 gsdios/GSD_WeiXin
 gimenete/iOS-boilerplate
+YouXianMing/Animations
 eseedo/iOSCourse
 steipete/Aspects
 romaonthego/RESideMenu
@@ -189,6 +193,7 @@ nst/RuntimeBrowser
 boctor/idev-recipes
 ChenYilong/CYLTabBarController
 swisspol/GCDWebServer
+objective-see/LuLu
 matryer/bitbar
 John-Lluch/SWRevealViewController
 MxABC/LBXScan
@@ -228,7 +233,9 @@ fikovnik/ShiftIt
 ibireme/YYWebImage
 wujunyang/MobileProject
 rFlex/SCRecorder
+zhengwenming/WeChat
 honcheng/PaperFold-for-iOS
+YouXianMing/YoCelsius
 nxdm/linke
 0xced/XCDYouTubeKit
 scrod/nv
@@ -261,6 +268,7 @@ kharrison/CodeExamples
 AlanQuatermain/AQGridView
 krzysztofzablocki/Bootstrap
 lovemo/MVVMFramework
+youknowone/UI7Kit
 gmoledina/GMGridView
 skywinder/ActionSheetPicker-3.0
 ChenYilong/ParseSourceCodeStudy
@@ -280,11 +288,14 @@ CoderZhuXH/XHLaunchAd
 m1entus/MZFormSheetController
 1and2papa/CTAssetsPickerController
 ealeksandrov/EAIntroView
+yujitach/MenuMeters
 nnhubbard/ZSSRichTextEditor
 typcn/bilibili-mac-client
 brunophilipe/Cakebrew
 nicklockwood/iRate
+ZhongTaoTian/WNXHuntForCity
 Pluto-Y/iOS-Echarts
+zhengwenming/WMPlayer
 erikdoe/ocmock
 johnno1962/injectionforxcode
 tumtumtum/StreamingKit
@@ -355,6 +366,7 @@ nicklockwood/SwipeView
 nsomar/OAStackView
 unash/BarrageRenderer
 sfsam/Itsycal
+zhxnlai/ZLSwipeableView
 kasper/phoenix
 rickytan/RTImageAssets
 iziz/libPhoneNumber-iOS
@@ -375,6 +387,7 @@ ivpusic/react-native-image-crop-picker
 JonasGessner/JGProgressHUD
 muhku/FreeStreamer
 robbdimitrov/RDVTabBarController
+ZhipingYang/UUChatTableView
 yixiangboy/IOSAnimationDemo
 EnjoySR/ESJsonFormat-Xcode
 orta/ARAnalytics

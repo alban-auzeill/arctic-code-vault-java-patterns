@@ -598,6 +598,7 @@ iReaderAndroid/X2C
 fossasia/pslab-android
 apache/commons-codec
 KeepSafe/ReLinker
+zhangdaiscott/jeecg-boot
 meituan/WMRouter
 Kaopiz/android-segmented-control
 apache/commons-beanutils
@@ -672,6 +673,7 @@ chrisbanes/Android-PullToRefresh
 jfeinstein10/SlidingMenu
 stepstone-tech/android-material-stepper
 forezp/SpringCloudLearning
+zhisheng17/flink-learning
 code4craft/netty-learning
 cymcsg/UltimateAndroid
 code4craft/webmagic
@@ -691,9 +693,11 @@ asLody/VirtualApp
 iNPUTmice/Conversations
 koush/AndroidAsync
 k0shk0sh/FastHub
+zhangdaiscott/jeecg
 JakeWharton/ViewPagerIndicator
 jfinal/jfinal
 pxb1988/dex2jar
+svga/SVGAPlayer-Android
 rey5137/material
 jhy/jsoup
 naman14/Timber
@@ -721,11 +725,14 @@ JessYanCoding/MVPArms
 psaravan/JamsMusicPlayer
 liaohuqiu/android-Ultra-Pull-To-Refresh
 lenve/JavaEETest
+ZHENFENG13/spring-boot-projects
 knightliao/disconf
 apache/tomcat-maven-plugin
 chrisbanes/PhotoView
 chanjarster/weixin-java-tools
 haifengl/smile
+YunaiV/onemall
+zhanghai/Douya
 chewiebug/GCViewer
 stylefeng/Guns
 voldemort/voldemort
@@ -787,6 +794,7 @@ SplashCodes/JAViewer
 guolindev/LitePal
 tomakehurst/wiremock
 527515025/springBoot
+zouzg/mybatis-generator-gui
 kymjs/KJFrameForAndroid
 stephanenicolas/robospice
 jackpal/Android-Terminal-Emulator
@@ -813,6 +821,7 @@ killme2008/aviatorscript
 fesh0r/fernflower
 gyf-dev/ImmersionBar
 harjot-oberai/MusicDNA
+youlookwhat/CloudReader
 litesuits/android-common
 kaushikgopal/RxJava-Android-Samples
 goldze/MVVMHabit
@@ -829,13 +838,16 @@ xuexiangjys/XUI
 sherxon/AlgoDS
 hongyangAndroid/AndroidAutoLayout
 Justson/AgentWeb
+youth5201314/banner
 FreeTymeKiyan/LeetCode-Sol-Res
 JessYanCoding/AndroidAutoSize
 H07000223/FlycoTabLayout
 fyhertz/libstreaming
 wuhaoyu1990/MagicCamera
 wangdan/AisenWeiBo
+zhangkaitao/es
 wxiaoqi/Spring-Cloud-Platform
+zhoutaoo/SpringCloud
 bauerca/drag-sort-listview
 yasserg/crawler4j
 changmingxie/tcc-transaction
@@ -892,6 +904,7 @@ yanzhenjie/SwipeRecyclerView
 java8/Java8InAction
 chrisbanes/philm
 bethrobson/Head-First-Design-Patterns
+ZieIony/Carbon
 jaydenxiao2016/AndroidFire
 notnoop/java-apns
 caoxinyu/RedisClient
@@ -901,6 +914,7 @@ Rukey7/MvpApp
 yeriomin/YalpStore
 dm77/barcodescanner
 openaphid/android-flip
+zwwill/yanxuan-weex-demo
 atomashpolskiy/bt
 sarxos/webcam-capture
 mojohaus/build-helper-maven-plugin
@@ -910,6 +924,7 @@ crazycodeboy/TakePhoto
 amitshekhariitbhu/RxJava2-Android-Samples
 chrisjenx/Calligraphy
 JakeWharton/DiskLruCache
+ysc/QuestionAnsweringSystem
 danielzeller/Depth-LIB-Android-
 hierynomus/sshj
 KunMinX/Jetpack-MVVM-Best-Practice
@@ -925,6 +940,8 @@ mercyblitz/tech-weekly
 yanzhenjie/AndServer
 ikarus23/MifareClassicTool
 CalebFenton/simplify
+ogaclejapan/SmartTabLayout
+zhanglei-workspace/shopping-management-system
 AbrahamCaiJin/CommonUtilLibrary
 rockerhieu/emojicon
 qiujuer/Genius-Android
@@ -970,7 +987,9 @@ meefik/linuxdeploy
 jeasonlzy/ImagePicker
 joyoyao/superCleanMaster
 castorflex/SmoothProgressBar
+zzz40500/GsonFormat
 jdamcd/android-crop
+zhegexiaohuozi/SeimiCrawler
 Nightonke/WoWoViewPager
 hanks-zyh/HTextView
 eclipse-ee4j/jsp-api
@@ -995,10 +1014,12 @@ tiann/epic
 oubowu/OuNews
 johncarl81/parceler
 JohnPersano/SuperToasts
+zzhoujay/RichText
 Froussios/Intro-To-RxJava
 eirslett/frontend-maven-plugin
 alamkanak/Android-Week-View
 saulmm/Material-Movies
+zhou-you/RxEasyHttp
 ivacf/archi
 vikramkakkar/SublimePicker
 Jacksgong/JKeyboardPanelSwitch
@@ -1007,6 +1028,7 @@ ffay/lanproxy
 romandanylyk/PageIndicatorView
 LuckyJayce/ViewPagerIndicator
 Ashok-Varma/BottomNavigation
+yydcdut/PhotoNoter
 yarolegovich/DiscreteScrollView
 xinghongfei/LookLook
 tuesda/CircleRefreshLayout
@@ -1054,6 +1076,7 @@ hongyangAndroid/Android_Blog_Demos
 huxq17/XRefreshView
 jgilfelt/chuck
 maurycyw/StaggeredGridView
+Zhaoss/WeiXinRecordedDemo
 crazyandcoder/citypicker
 Malinskiy/SuperRecyclerView
 doggycoder/AndroidOpenGLDemo
@@ -1095,6 +1118,7 @@ medcl/elasticsearch-analysis-pinyin
 bmelnychuk/AndroidTreeView
 artem-zinnatullin/qualitymatters
 Hitomis/transferee
+oguzbilgener/CircularFloatingActionMenu
 shzlw/poli
 lovetuzitong/MultiImageSelector
 oasisfeng/condom
@@ -1128,6 +1152,7 @@ MiguelCatalan/MaterialSearchView
 eluleci/FlatUI
 JingYeoh/FragmentRigger
 mcharmas/android-parcelable-intellij-plugin
+zhanghai/MaterialProgressBar
 xiaoyaoyou1212/XSnow
 iwgang/CountdownView
 xiaojinzi123/Component
@@ -1136,6 +1161,7 @@ dexafree/MaterialList
 mxn21/FlowingDrawer
 mihaip/dex-method-counts
 vdurmont/emoji-java
+zo0r/react-native-push-notification
 akexorcist/BluetoothSPPLibrary
 bonnyfone/vectalign
 code-mc/material-icon-lib
@@ -1188,6 +1214,7 @@ yizhiwazi/springboot-socks
 detro/ghostdriver
 elevenetc/TextSurface
 woxingxiao/BubbleSeekBar
+zzz40500/AndroidSweetSheet
 bm-x/PhotoView
 alexvasilkov/FoldableLayout
 siwangqishiq/ImageEditor-Android
@@ -1202,6 +1229,7 @@ mcxtzhang/SwipeDelMenuLayout
 dlazaro66/QRCodeReaderView
 KunMinX/Linkage-RecyclerView
 nisrulz/easydeviceinfo
+OCNYang/Android-Animation-Set
 Tibolte/ElasticDownload
 wendux/DSBridge-Android
 aritraroy/PatternLockView
@@ -1219,6 +1247,7 @@ stephentuso/welcome-android
 Raysmond/SpringBlog
 eschao/android-PageFlip
 Sunzxyong/Recovery
+zaaach/CityPicker
 wingjay/jianshi
 jokermonn/permissions4m
 armcha/Space-Navigation-View
@@ -1237,6 +1266,7 @@ mayubao/Android-Pay
 JZXiang/TimePickerDialog
 pinguo-zhouwei/MZBannerView
 totond/TextPathView
+zhouchaoyuan/excelPanel
 AlexLiuSheng/CheckVersionLib
 mancj/MaterialSearchBar
 KingJA/LoadSir
@@ -1251,5 +1281,6 @@ BakerJQ/Android-InfiniteCards
 ImmortalZ/TransitionHelper
 czy1121/update
 halirutan/IntelliJ-Key-Promoter-X
+oblador/react-native-keychain
 AAkira/ExpandableLayout
 evollu/react-native-fcm

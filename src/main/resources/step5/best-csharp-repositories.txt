@@ -102,6 +102,7 @@ protobuf-net/protobuf-net
 umbraco/Umbraco-CMS
 microsoft/VFSForGit
 smartstore/SmartStoreNET
+octokit/octokit.net
 quasar/Quasar
 linq2db/linq2db
 shadowsocksr-backup/shadowsocksr-csharp
@@ -302,6 +303,7 @@ RolandPheasant/TailBlazer
 JoshClose/CsvHelper
 neuecc/Utf8Json
 IgnaceMaes/MaterialSkin
+zalo/MathUtilities
 tmenier/Flurl
 EduardoPires/EquinoxProject
 NoelFB/Celeste

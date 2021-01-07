@@ -40,6 +40,7 @@ thoughtbot/paperclip
 Arachni/arachni
 faker-ruby/faker
 elastic/elasticsearch-rails
+octokit/octokit.rb
 wpscanteam/wpscan
 jruby/jruby
 inspec/inspec
@@ -68,6 +69,7 @@ voltrb/volt
 cucumber/cucumber-ruby
 thoughtbot/factory_bot
 toptal/chewy
+zammad/zammad
 puma/puma
 ruby-concurrency/concurrent-ruby
 twbs/bootstrap-sass
@@ -187,6 +189,7 @@ mongomapper/mongomapper
 savonrb/savon
 houndci/hound
 hybridgroup/artoo
+octobox/octobox
 trailblazer/reform
 refile/refile
 strongself/Generamba
@@ -318,7 +321,9 @@ lynndylanhurley/devise_token_auth
 ankane/pghero
 EugenMayer/docker-sync
 troessner/reek
+zmoazeni/csscss
 mojombo/grit
+zdennis/activerecord-import
 mbj/mutant
 thiagopradi/octopus
 rails/rails-deprecated_sanitizer

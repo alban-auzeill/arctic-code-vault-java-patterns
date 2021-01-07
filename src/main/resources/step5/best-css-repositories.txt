@@ -10,6 +10,7 @@ HubSpot/offline
 Daemonite/material
 appbaseio/dejavu
 understrap/understrap
+oddbird/susy
 cssnano/cssnano
 intel/appframework
 assemble/assemble
@@ -20,6 +21,7 @@ popcorn-time/popcorn-app
 froala/wysiwyg-editor
 tictail/bounce.js
 creativetimofficial/material-kit
+zurb/foundation-apps
 furiouscollective/gridforms
 Remix-Design/RemixIcon
 at-import/breakpoint
@@ -68,6 +70,7 @@ pattle/simpsons-in-css
 DataTables/DataTables
 erikflowers/weather-icons
 joshuaclayton/blueprint-css
+zachfitz/Ionic-Material
 saeedalipoor/icono
 cyanharlow/purecss-francine
 barryclark/jekyll-now
@@ -93,6 +96,7 @@ rickyrauch/Balloons.IO
 mattvh/jekyllthemes
 guillaumepotier/Garlic.js
 remy/mit-license
+yscoder/hexo-theme-indigo
 l-hammer/You-need-to-know-css
 marcelodolza/iziModal
 HunterLarco/voxel.css

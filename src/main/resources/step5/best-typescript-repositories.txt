@@ -32,6 +32,7 @@ apollographql/apollo-client
 react-navigation/react-navigation
 aws/aws-cdk
 n8n-io/n8n
+vercel/hyper
 fullcalendar/fullcalendar
 teambit/bit
 marmelab/react-admin
@@ -153,6 +154,7 @@ hotwired/stimulus
 vega/vega-lite
 Yoctol/bottender
 microsoft/VoTT
+vercel/swr
 darkreader/darkreader
 swimlane/ngx-charts
 react-cosmos/react-cosmos
@@ -213,6 +215,7 @@ bitcoinjs/bitcoinjs-lib
 NarrativeScience/log.io
 Qihoo360/wayne
 microsoft/vscode-react-native
+vercel/vercel
 veonim/veonim
 tinacms/tinacms
 wasdk/WebAssemblyStudio
@@ -287,6 +290,7 @@ metricsgraphics/metrics-graphics
 googleworkspace/md2googleslides
 scribbletune/scribbletune
 datorama/akita
+effector/effector
 shoelace-style/shoelace
 decaffeinate/decaffeinate
 rough-stuff/rough
@@ -309,6 +313,7 @@ Tencent/TSW
 GoogleChrome/rendertron
 ionic-team/ionic-app-scripts
 alibaba/pont
+oclif/oclif
 ionic-team/ionic-conference-app
 RemoteDebug/remotedebug-ios-webkit-adapter
 NaoTu/DesktopNaotu
@@ -460,6 +465,7 @@ leebenson/reactql
 nomcopter/react-mosaic
 piotrwitek/utility-types
 rbuckton/reflect-metadata
+sindresorhus/ow
 s-panferov/awesome-typescript-loader
 trojanowski/react-apollo-hooks
 DylanVann/react-native-fast-image
@@ -474,6 +480,7 @@ piotrwitek/typesafe-actions
 davidtheclark/cosmiconfig
 buzinas/tslint-eslint-rules
 idiotWu/smooth-scrollbar
+yortus/asyncawait
 NightCatSama/vue-slider-component
 sindresorhus/is
 mdevils/html-entities

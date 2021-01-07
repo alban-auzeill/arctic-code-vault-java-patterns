@@ -1,6 +1,7 @@
 TheAlgorithms/Python
 tensorflow/models
 django/django
+ytdl-org/youtube-dl
 home-assistant/core
 scikit-learn/scikit-learn
 XX-net/XX-Net
@@ -256,6 +257,7 @@ dbcli/mycli
 pyca/cryptography
 donnemartin/data-science-ipython-notebooks
 mars-project/mars
+Yorko/mlcourse.ai
 google/seq2seq
 ckan/ckan
 Gallopsled/pwntools
@@ -295,6 +297,7 @@ openvinotoolkit/open_model_zoo
 librosa/librosa
 twintproject/twint
 rll/rllab
+offu/WeRoBot
 lutris/lutris
 NVlabs/SPADE
 mps-youtube/mps-youtube
@@ -518,6 +521,7 @@ eudicots/Cactus
 RocketMap/RocketMap
 openai/improved-gan
 pre-commit/pre-commit
+oauthlib/oauthlib
 python/peps
 awslabs/amazon-redshift-utils
 httprunner/httprunner
@@ -543,6 +547,7 @@ rlcode/reinforcement-learning
 PokeAPI/pokeapi
 TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
 Toblerity/Shapely
+yougov/mongo-connector
 ArchiveBox/ArchiveBox
 knownsec/Pocsuite
 errbotio/errbot
@@ -656,6 +661,7 @@ geekcomputers/Python
 Tivix/django-rest-auth
 django-mptt/django-mptt
 QQuick/Transcrypt
+zerodb/zerodb
 selfspy/selfspy
 lincolnloop/python-qrcode
 zostera/django-bootstrap3
@@ -774,6 +780,7 @@ tgalal/yowsup
 schollz/howmanypeoplearearound
 guhongze/adminset
 smicallef/spiderfoot
+zzzeek/sqlalchemy
 chiphuyen/stanford-tensorflow-tutorials
 mchristopher/PokemonGo-DesktopMap
 Jack-Cherish/python-spider
@@ -788,13 +795,16 @@ rusty1s/pytorch_geometric
 StevenBlack/hosts
 gto76/python-cheatsheet
 mwaskom/seaborn
+youfou/wxpy
 brightmart/text_classification
 coleifer/peewee
 lmcinnes/umap
 pypyjs/pypyjs
 daviddrysdale/python-phonenumbers
 Rapptz/discord.py
+yunjey/pytorch-tutorial
 andymccurdy/redis-py
+ytisf/theZoo
 Miserlou/Zappa
 wangshub/wechat_jump_game
 achael/eht-imaging
@@ -832,10 +842,12 @@ axi0mX/ipwndfu
 benoitc/gunicorn
 Cadene/pretrained-models.pytorch
 cool-RR/PySnooper
+Zulko/moviepy
 shengqiangzhang/examples-of-web-crawlers
 eriklindernoren/PyTorch-GAN
 junyanz/pytorch-CycleGAN-and-pix2pix
 jhao104/proxy_pool
+zpoint/CPython-Internals
 gregmalcolm/python_koans
 MrS0m30n3/youtube-dl-gui
 malwaredllc/byob
@@ -879,6 +891,7 @@ liuwons/wxBot
 shenweichen/DeepCTR
 jindongwang/transferlearning
 longld/peda
+zihangdai/xlnet
 Sentdex/pygta5
 derv82/wifite2
 Uberi/speech_recognition
@@ -886,6 +899,7 @@ OmkarPathak/pygorithm
 chubin/wttr.in
 ktbyers/netmiko
 geekan/scrapy-examples
+zerosum0x0/koadic
 eternnoir/pyTelegramBotAPI
 thtrieu/darkflow
 CharlesShang/FastMaskRCNN
@@ -898,6 +912,8 @@ sshwsfc/xadmin
 livid/v2ex-gae
 xmendez/wfuzz
 chyroc/WechatSogou
+ZiniuLu/Python-100-Days
+yzhao062/pyod
 Delgan/loguru
 ibab/tensorflow-wavenet
 dpgaspar/Flask-AppBuilder
@@ -928,6 +944,7 @@ XuShaohua/bcloud
 rougier/numpy-100
 asweigart/pyautogui
 burnash/gspread
+yosinski/deep-visualization-toolbox
 aaugustin/websockets
 pandolia/qqbot
 stephenmcd/mezzanine
@@ -948,6 +965,7 @@ NullArray/AutoSploit
 samuelcolvin/pydantic
 nl8590687/ASRT_SpeechRecognition
 qqwweee/keras-yolo3
+yuanxiaosc/DeepNude-an-Image-to-Image-technology
 rmax/scrapy-redis
 junyanz/iGAN
 hardikvasa/google-images-download
@@ -994,6 +1012,7 @@ lukemelas/EfficientNet-PyTorch
 r0oth3x49/udemy-dl
 CreatCodeBuild/TensorFlow-and-DeepLearning-Tutorial
 omab/python-social-auth
+zzw922cn/Automatic_Speech_Recognition
 samshadwell/TrumpScript
 b-ryan/powerline-shell
 stanfordnlp/stanfordnlp
@@ -1054,6 +1073,7 @@ fmfn/BayesianOptimization
 csujedihy/lc-all-solutions
 eliben/pycparser
 kachayev/fn.py
+ziggear/shadowsocks
 smallcorgi/Faster-RCNN_TF
 meetshah1995/pytorch-semseg
 lepture/authlib
@@ -1091,6 +1111,7 @@ kimiyoung/transformer-xl
 keithito/tacotron
 wzpan/wukong-robot
 JonathanSalwan/ROPgadget
+ZhaoJ9014/face.evoLVe.PyTorch
 junerain123/javsdt
 taoufik07/responder
 andialbrecht/sqlparse
@@ -1098,6 +1119,7 @@ saulpw/visidata
 awentzonline/image-analogies
 jmcarp/robobrowser
 m4ll0k/WAScan
+YunYang1994/tensorflow-yolov3
 neozhaoliang/pywonderland
 quark0/darts
 plamere/spotipy
@@ -1134,6 +1156,7 @@ Bogdanp/dramatiq
 tdryer/hangups
 Julian/jsonschema
 rbgirshick/fast-rcnn
+ofek/hatch
 tobegit3hub/tensorflow_template_application
 amdegroot/ssd.pytorch
 taki0112/Tensorflow-Cookbook
@@ -1210,6 +1233,7 @@ jorgebastida/gordon
 kenshohara/3D-ResNets-PyTorch
 dschep/ntfy
 karpathy/arxiv-sanity-preserver
+znxlwm/pytorch-generative-model-collections
 EntilZha/PyFunctional
 ckreibich/scholar.py
 etianen/django-reversion
@@ -1250,6 +1274,7 @@ emre/storm
 jaredks/rumps
 ry/tensorflow-resnet
 avinashpaliwal/Super-SloMo
+zjhuang22/maskscoring_rcnn
 kaonashi-tyc/zi2zi
 Shougo/denite.nvim
 wuub/SublimeREPL
