@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
@@ -16,10 +15,9 @@ import java.util.TreeSet;
 
 import static com.auzeill.github.tools.HttpUtils.body;
 import static com.auzeill.github.tools.HttpUtils.githubAPIRequest;
-import static com.auzeill.github.tools.Step1ExtractGitHubGreatestHits.owner;
 import static com.auzeill.github.tools.StringUtils.asJsonObject;
 
-public class Step4FilterOrganizationRepositoryWithJava {
+public class Step4ExtractRepositoriesMetadata {
   private static final Gson GSON = new GsonBuilder()
     .create();
 
@@ -27,7 +25,6 @@ public class Step4FilterOrganizationRepositoryWithJava {
   public static final Path REPOSITORY_METADATA_PATH = STEP4_PATH.resolve("repositories-metadata.txt");
   public static final Path INVALID_REPOSITORIES_PATH = STEP4_PATH.resolve("invalid-repositories.txt");
   public static final Path MOVED_REPOSITORIES_PATH = STEP4_PATH.resolve("moved-repositories.txt");
-  public static final int MINIMUM_JAVA_CLASSES = 20;
 
   public static Map<String, JsonObject> loadRepositoriesMetadata() throws IOException {
     Map<String, JsonObject> map = new TreeMap<>();
@@ -58,10 +55,6 @@ public class Step4FilterOrganizationRepositoryWithJava {
     Map<String, JsonObject> metadataMap = loadRepositoriesMetadata();
     Map<String, JsonObject> cleanMetadataMap = new TreeMap<>(StringUtils.LOWER_CASE_COMPARATOR);
     Set<String> greatestRepositories = Step1ExtractGitHubGreatestHits.loadGreatestRepositories();
-    Map<String, Long> classesPerOrganization = Step3JavaClassesPerOrganization.classesPerOrganization();
-    for (String organization : new ArrayList<>(classesPerOrganization.keySet())) {
-      classesPerOrganization.put(organization.toLowerCase(Locale.ROOT), classesPerOrganization.get(organization));
-    }
     Set<String> invalidRepositories = loadInvalidRepositories();
     Set<String> cleanInvalidRepositories = new TreeSet<>(StringUtils.LOWER_CASE_COMPARATOR);
     Map<String, String> movedRepositories = loadMovedRepositories();
@@ -69,7 +62,6 @@ public class Step4FilterOrganizationRepositoryWithJava {
     GitHubRestApi restApi = new GitHubRestApi();
     for (String oldRepositoryName : greatestRepositories) {
       oldRepositoryName = oldRepositoryName.toLowerCase(Locale.ROOT);
-      long classCount = classesPerOrganization.getOrDefault(owner(oldRepositoryName), 0L);
       String newRepositoryName = movedRepositories.getOrDefault(oldRepositoryName, oldRepositoryName);
       if (!oldRepositoryName.equals(newRepositoryName)) {
         cleanMovedRepositories.put(oldRepositoryName, newRepositoryName);
@@ -79,11 +71,11 @@ public class Step4FilterOrganizationRepositoryWithJava {
         cleanMetadataMap.put(newRepositoryName, existingJsonSummary);
       } else if (invalidRepositories.contains(oldRepositoryName)) {
         cleanInvalidRepositories.add(oldRepositoryName);
-      } else if (classCount >= MINIMUM_JAVA_CLASSES) {
+      } else {
         String organizationUrl = "https://api.github.com/repos/" + newRepositoryName;
         HttpResponse<String> response = restApi.core(githubAPIRequest(organizationUrl));
-        if (response.statusCode() == 404) {
-          System.out.println("ERROR 404 for repository " + newRepositoryName);
+        if (response.statusCode() == 403 || response.statusCode() == 404 || response.statusCode() == 451) {
+          System.out.println("ERROR " + response.statusCode() + " for repository " + newRepositoryName);
           StringUtils.appendLine(INVALID_REPOSITORIES_PATH, oldRepositoryName);
           invalidRepositories.add(oldRepositoryName);
           cleanInvalidRepositories.add(oldRepositoryName);
