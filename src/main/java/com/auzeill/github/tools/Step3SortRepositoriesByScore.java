@@ -1,5 +1,6 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.StringUtils;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import java.io.IOException;
@@ -16,19 +17,19 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 
-public class Step5SortRepositoriesByScore {
+public class Step3SortRepositoriesByScore {
 
-  public static final Path STEP5_PATH = Paths.get("src", "main", "resources", "step5");
+  public static final Path STEP3_PATH = Paths.get("src", "main", "resources", "step3");
 
   public static void main(String[] args) throws IOException {
-    Map<String, JsonObject> metadata = Step4ExtractRepositoriesMetadata.loadRepositoriesMetadata();
+    Map<String, JsonObject> metadata = Step2ExtractRepositoriesMetadata.loadRepositoriesMetadata();
 
     Set<String> languages = metadata.values().stream()
       .map(Repo::new)
       .map(Repo::languages)
       .flatMap(Collection::stream)
       .collect(Collectors.toCollection(TreeSet::new));
-    StringUtils.saveList(STEP5_PATH.resolve("all-languages.txt") , languages);
+    StringUtils.saveList(STEP3_PATH.resolve("all-languages.txt") , languages);
 
     Map<String, String> languageAliasMap = new HashMap<>();
     languageAliasMap.put("java", "Java");
@@ -71,7 +72,7 @@ public class Step5SortRepositoriesByScore {
   }
 
   public static Path bestRepositoriesPath(String familyName) {
-    return STEP5_PATH.resolve("best-" + familyName + "-repositories.txt");
+    return STEP3_PATH.resolve("best-" + familyName + "-repositories.txt");
   }
 
   public enum OwnerType {

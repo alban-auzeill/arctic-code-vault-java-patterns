@@ -1,5 +1,7 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.GitHubRestApi;
+import com.auzeill.github.tools.utlis.StringUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -14,15 +16,15 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import static com.auzeill.github.tools.HttpUtils.body;
-import static com.auzeill.github.tools.HttpUtils.githubAPIRequest;
+import static com.auzeill.github.tools.utlis.HttpUtils.body;
+import static com.auzeill.github.tools.utlis.HttpUtils.githubAPIRequest;
 
-public class Step6SearchJavaPatterns {
+public class Step4SearchJavaPatterns {
   private static final Gson GSON = new GsonBuilder()
     .create();
 
-  public static final Path STEP6_PATH = Paths.get("src", "main", "resources", "step6");
-  public static final Path SEARCH_RESULT_PATH = STEP6_PATH.resolve("search-result.txt");
+  public static final Path STEP4_PATH = Paths.get("src", "main", "resources", "step4");
+  public static final Path SEARCH_RESULT_PATH = STEP4_PATH.resolve("search-result.txt");
 
   public static Map<String, JsonObject> loadSearchResult() throws IOException {
     Map<String, JsonObject> map = new LinkedHashMap<>();
@@ -39,7 +41,7 @@ public class Step6SearchJavaPatterns {
   public static void main(String[] args) throws IOException, InterruptedException {
     Map<String, JsonObject> searchResult = loadSearchResult();
     Map<String, JsonObject> cleanSearchResult = new LinkedHashMap<>();
-    Path repositoriesPath = Step5SortRepositoriesByScore.bestRepositoriesPath("java");
+    Path repositoriesPath = Step3SortRepositoriesByScore.bestRepositoriesPath("java");
     GitHubRestApi restApi = new GitHubRestApi();
     for (String repository : StringUtils.loadTrimmedList(repositoriesPath)) {
       searchIn(searchResult, cleanSearchResult, restApi, repository);

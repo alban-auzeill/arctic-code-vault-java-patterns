@@ -1,5 +1,6 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.StringUtils;
 import com.google.gson.JsonObject;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -16,10 +17,10 @@ import java.util.regex.Pattern;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
-public class Step8DecodeSourceCode {
+public class Step6DecodeSourceCode {
 
-  public static final Path STEP8_PATH = Paths.get("src", "main", "resources", "step8");
-  public static final Path SRC_PATH = STEP8_PATH.resolve("src");
+  public static final Path STEP6_PATH = Paths.get("src", "main", "resources", "step6");
+  public static final Path SRC_PATH = STEP6_PATH.resolve("src");
   private static final Pattern REPOSITORY_REGEX = Pattern.compile("^https://github\\.com/([^/]++/[^/]++)/");
 
   public static void main(String[] args) throws IOException {
@@ -27,7 +28,7 @@ public class Step8DecodeSourceCode {
       Files.createDirectory(SRC_PATH);
     }
     Map<String, Integer> repositoriesRanking = loadRepositoryRanking();
-    Map<String, JsonObject> urlContents = Step7DownloadSourceCode.loadUrlContents();
+    Map<String, JsonObject> urlContents = Step5DownloadSourceCode.loadUrlContents();
     for (JsonObject json : urlContents.values()) {
       JsonObject data = json.getAsJsonObject("data");
       String htmlUrl = data.getAsJsonPrimitive("html_url").getAsString();
@@ -82,7 +83,7 @@ public class Step8DecodeSourceCode {
 
   public static Map<String, Integer> loadRepositoryRanking() throws IOException {
     Map<String, Integer> repositoriesRanking = new HashMap<>();
-    Path repositoriesPath = Step5SortRepositoriesByScore.bestRepositoriesPath("java");
+    Path repositoriesPath = Step3SortRepositoriesByScore.bestRepositoriesPath("java");
     List<String> repositories = StringUtils.loadTrimmedList(repositoriesPath);
     for (int i = 0; i < repositories.size(); i++) {
       repositoriesRanking.put(repositories.get(i), i + 1);

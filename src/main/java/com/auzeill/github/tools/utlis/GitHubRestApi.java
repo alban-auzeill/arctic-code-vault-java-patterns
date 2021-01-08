@@ -1,11 +1,11 @@
-package com.auzeill.github.tools;
+package com.auzeill.github.tools.utlis;
 
 import com.google.gson.JsonObject;
 import java.io.IOException;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-import static com.auzeill.github.tools.HttpUtils.body;
+import static com.auzeill.github.tools.utlis.HttpUtils.body;
 
 public class GitHubRestApi {
 

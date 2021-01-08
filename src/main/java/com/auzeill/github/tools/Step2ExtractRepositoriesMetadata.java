@@ -1,5 +1,7 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.GitHubRestApi;
+import com.auzeill.github.tools.utlis.StringUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -13,18 +15,18 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import static com.auzeill.github.tools.HttpUtils.body;
-import static com.auzeill.github.tools.HttpUtils.githubAPIRequest;
-import static com.auzeill.github.tools.StringUtils.asJsonObject;
+import static com.auzeill.github.tools.utlis.HttpUtils.body;
+import static com.auzeill.github.tools.utlis.HttpUtils.githubAPIRequest;
+import static com.auzeill.github.tools.utlis.StringUtils.asJsonObject;
 
-public class Step4ExtractRepositoriesMetadata {
+public class Step2ExtractRepositoriesMetadata {
   private static final Gson GSON = new GsonBuilder()
     .create();
 
-  public static final Path STEP4_PATH = Paths.get("src", "main", "resources", "step4");
-  public static final Path REPOSITORY_METADATA_PATH = STEP4_PATH.resolve("repositories-metadata.txt");
-  public static final Path INVALID_REPOSITORIES_PATH = STEP4_PATH.resolve("invalid-repositories.txt");
-  public static final Path MOVED_REPOSITORIES_PATH = STEP4_PATH.resolve("moved-repositories.txt");
+  public static final Path STEP2_PATH = Paths.get("src", "main", "resources", "step2");
+  public static final Path REPOSITORY_METADATA_PATH = STEP2_PATH.resolve("repositories-metadata.txt");
+  public static final Path INVALID_REPOSITORIES_PATH = STEP2_PATH.resolve("invalid-repositories.txt");
+  public static final Path MOVED_REPOSITORIES_PATH = STEP2_PATH.resolve("moved-repositories.txt");
 
   public static Map<String, JsonObject> loadRepositoriesMetadata() throws IOException {
     Map<String, JsonObject> map = new TreeMap<>();

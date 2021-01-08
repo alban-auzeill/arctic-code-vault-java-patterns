@@ -8,13 +8,11 @@ public class ExtractMain {
 
   public static void main(String[] args) throws IOException, InterruptedException {
     Step1ExtractGitHubGreatestHits.main(NO_ARGS);
-    Step2FilterOrganization.main(NO_ARGS);
-    Step3JavaClassesPerOrganization.main(NO_ARGS);
-    Step4ExtractRepositoriesMetadata.main(NO_ARGS);
-    Step5SortRepositoriesByScore.main(NO_ARGS);
-    Step6SearchJavaPatterns.main(NO_ARGS);
-    Step7DownloadSourceCode.main(NO_ARGS);
-    Step8DecodeSourceCode.main(NO_ARGS);
+    Step2ExtractRepositoriesMetadata.main(NO_ARGS);
+    Step3SortRepositoriesByScore.main(NO_ARGS);
+    Step4SearchJavaPatterns.main(NO_ARGS);
+    Step5DownloadSourceCode.main(NO_ARGS);
+    Step6DecodeSourceCode.main(NO_ARGS);
   }
 
 }

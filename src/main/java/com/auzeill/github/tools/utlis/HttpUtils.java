@@ -1,4 +1,4 @@
-package com.auzeill.github.tools;
+package com.auzeill.github.tools.utlis;
 
 import java.io.IOException;
 import java.net.URI;

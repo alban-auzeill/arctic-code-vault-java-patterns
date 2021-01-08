@@ -1,5 +1,7 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.GitHubRestApi;
+import com.auzeill.github.tools.utlis.StringUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -14,18 +16,18 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-import static com.auzeill.github.tools.HttpUtils.body;
-import static com.auzeill.github.tools.HttpUtils.githubAPIRequest;
-import static com.auzeill.github.tools.StringUtils.asJsonObject;
+import static com.auzeill.github.tools.utlis.HttpUtils.body;
+import static com.auzeill.github.tools.utlis.HttpUtils.githubAPIRequest;
+import static com.auzeill.github.tools.utlis.StringUtils.asJsonObject;
 
-public class Step7DownloadSourceCode {
+public class Step5DownloadSourceCode {
 
   private static final Gson GSON = new GsonBuilder()
     .create();
 
-  public static final Path STEP7_PATH = Paths.get("src", "main", "resources", "step7");
-  public static final Path URL_CONTENT_PATH = STEP7_PATH.resolve("url-contents.txt");
-  public static final Path URL_ERROR_PATH = STEP7_PATH.resolve("url-errors.txt");
+  public static final Path STEP5_PATH = Paths.get("src", "main", "resources", "step5");
+  public static final Path URL_CONTENT_PATH = STEP5_PATH.resolve("url-contents.txt");
+  public static final Path URL_ERROR_PATH = STEP5_PATH.resolve("url-errors.txt");
 
   public static Map<String, JsonObject> loadUrlContents() throws IOException {
     Map<String, JsonObject> map = new LinkedHashMap<>();
@@ -52,7 +54,7 @@ public class Step7DownloadSourceCode {
     Map<String, JsonObject> cleanUrlContents = new LinkedHashMap<>();
     Set<String> urlErrors = loadUrlErrors();
     Set<String> cleanUrlErrors = new LinkedHashSet<>();
-    Map<String, JsonObject> searchResult = Step6SearchJavaPatterns.loadSearchResult();
+    Map<String, JsonObject> searchResult = Step4SearchJavaPatterns.loadSearchResult();
     Set<String> uniqueUrls = new LinkedHashSet<>();
     for (JsonObject json : searchResult.values()) {
       JsonArray urls = json.getAsJsonArray("urls");

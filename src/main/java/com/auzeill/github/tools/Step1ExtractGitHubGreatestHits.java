@@ -1,5 +1,7 @@
 package com.auzeill.github.tools;
 
+import com.auzeill.github.tools.utlis.HttpUtils;
+import com.auzeill.github.tools.utlis.StringUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.Set;
 import java.util.TreeSet;
 
-import static com.auzeill.github.tools.HttpUtils.newTextRequest;
+import static com.auzeill.github.tools.utlis.HttpUtils.newTextRequest;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
