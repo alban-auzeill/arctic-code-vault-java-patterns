@@ -1,0 +1,38 @@
+/* (rank 795) copied from https://github.com/tomakehurst/wiremock/blob/788c0cff96b3cfb8d4d3b974c4090be9783a0f90/src/main/java/com/github/tomakehurst/wiremock/matching/AbstractRegexPattern.java
+ * Copyright (C) 2011 Thomas Akehurst
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.github.tomakehurst.wiremock.matching;
+
+import java.util.regex.Pattern;
+
+import static java.util.regex.Pattern.DOTALL;
+
+public abstract class AbstractRegexPattern extends StringValuePattern {
+
+    protected final Pattern pattern;
+
+    protected AbstractRegexPattern(String regex) {
+        super(regex);
+        pattern = Pattern.compile(regex, DOTALL);
+    }
+
+    @Override
+    public MatchResult match(String value) {
+        return MatchResult.of(
+            value != null && pattern.matcher(value).matches()
+        );
+    }
+
+}

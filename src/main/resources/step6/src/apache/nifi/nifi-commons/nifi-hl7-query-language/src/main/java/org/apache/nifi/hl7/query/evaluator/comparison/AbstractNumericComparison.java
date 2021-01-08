@@ -1,0 +1,68 @@
+/* (rank 138) copied from https://github.com/apache/nifi/blob/f9ae3bb9c970cd8d6d1d9e10f07cab9bdb66baa9/nifi-commons/nifi-hl7-query-language/src/main/java/org/apache/nifi/hl7/query/evaluator/comparison/AbstractNumericComparison.java
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.nifi.hl7.query.evaluator.comparison;
+
+import java.util.regex.Pattern;
+
+import org.apache.nifi.hl7.query.evaluator.Evaluator;
+
+public abstract class AbstractNumericComparison extends AbstractComparisonEvaluator {
+
+    private static final Pattern NUMERIC_PATTERN = Pattern.compile("\\d+(\\.\\d+)?");
+
+    public AbstractNumericComparison(final Evaluator<?> lhs, final Evaluator<?> rhs) {
+        super(lhs, rhs);
+    }
+
+    @Override
+    protected final boolean compare(final Object lhs, final Object rhs) {
+        final Double lhsDouble = toDouble(lhs);
+        if (lhsDouble == null) {
+            return false;
+        }
+
+        final Double rhsDouble = toDouble(rhs);
+        if (rhsDouble == null) {
+            return false;
+        }
+
+        return compareNumbers(lhsDouble, rhsDouble);
+    }
+
+    private Double toDouble(final Object value) {
+        if (value == null) {
+            return null;
+        }
+
+        if (value instanceof Double) {
+            return (Double) value;
+        }
+        if (value instanceof Number) {
+            return ((Number) value).doubleValue();
+        }
+
+        if (value instanceof String) {
+            if (NUMERIC_PATTERN.matcher((String) value).matches()) {
+                return Double.parseDouble((String) value);
+            }
+        }
+
+        return null;
+    }
+
+    protected abstract boolean compareNumbers(final Double lhs, final Double rhs);
+}
