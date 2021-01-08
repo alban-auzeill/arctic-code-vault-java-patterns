@@ -46,37 +46,6 @@ public class Step6DecodeSourceCode {
         Files.write(destFile, insertUrlInSourceCode(content, htmlUrl, ranking(repositoriesRanking, htmlUrl)));
       }
 
-      /*
-       * json example:
-       * {
-       * "url":
-       * "https://api.github.com/repositories/507775/contents/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java?ref\u003dfeab123ba400b150f3dcd04dd27cf57474b70d5a",
-       * "data": {
-       * "name":"ClearScreenCliCommand.java",
-       * "path":"x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java",
-       * "sha":"ffde1ec556a0d2936a3dc03d6ab27129854ad561",
-       * "size":801,
-       * "url":
-       * "https://api.github.com/repos/elastic/elasticsearch/contents/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java?ref\u003dfeab123ba400b150f3dcd04dd27cf57474b70d5a",
-       * "html_url":
-       * "https://github.com/elastic/elasticsearch/blob/feab123ba400b150f3dcd04dd27cf57474b70d5a/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java",
-       * "git_url":"https://api.github.com/repos/elastic/elasticsearch/git/blobs/ffde1ec556a0d2936a3dc03d6ab27129854ad561",
-       * "download_url":
-       * "https://raw.githubusercontent.com/elastic/elasticsearch/feab123ba400b150f3dcd04dd27cf57474b70d5a/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java",
-       * "type":"file",
-       * "content":
-       * "LyoKICogQ29weXJpZ2h0IEVsYXN0aWNzZWFyY2ggQi5WLiBhbmQvb3IgbGlj\nZW5zZWQgdG8gRWxhc3RpY3NlYXJjaCBCLlYuIHVuZGVyIG9uZQogKiBvciBt\nb3JlIGNvbnRyaWJ1dG9yIGxpY2Vuc2UgYWdyZWVtZW50cy4gTGljZW5zZWQg\ndW5kZXIgdGhlIEVsYXN0aWMgTGljZW5zZTsKICogeW91IG1heSBub3QgdXNl\nIHRoaXMgZmlsZSBleGNlcHQgaW4gY29tcGxpYW5jZSB3aXRoIHRoZSBFbGFz\ndGljIExpY2Vuc2UuCiAqLwpwYWNrYWdlIG9yZy5lbGFzdGljc2VhcmNoLnhw\nYWNrLnNxbC5jbGkuY29tbWFuZDsKCmltcG9ydCBvcmcuZWxhc3RpY3NlYXJj\naC54cGFjay5zcWwuY2xpLkNsaVRlcm1pbmFsOwoKaW1wb3J0IGphdmEudXRp\nbC5yZWdleC5NYXRjaGVyOwppbXBvcnQgamF2YS51dGlsLnJlZ2V4LlBhdHRl\ncm47CgovKioKICogY2xzIGNvbW1hbmQgdGhhdCBjbGVhbnMgdGhlIHNjcmVl\nbgogKi8KcHVibGljIGNsYXNzIENsZWFyU2NyZWVuQ2xpQ29tbWFuZCBleHRl\nbmRzIEFic3RyYWN0Q2xpQ29tbWFuZCB7CgogICAgcHVibGljIENsZWFyU2Ny\nZWVuQ2xpQ29tbWFuZCgpIHsKICAgICAgICBzdXBlcihQYXR0ZXJuLmNvbXBp\nbGUoImNscyIsIFBhdHRlcm4uQ0FTRV9JTlNFTlNJVElWRSkpOwogICAgfQoK\nICAgIEBPdmVycmlkZQogICAgcHJvdGVjdGVkIGJvb2xlYW4gZG9IYW5kbGUo\nQ2xpVGVybWluYWwgdGVybWluYWwsIENsaVNlc3Npb24gY2xpU2Vzc2lvbiwg\nTWF0Y2hlciBtLCBTdHJpbmcgbGluZSkgewogICAgICAgIHRlcm1pbmFsLmNs\nZWFyKCk7CiAgICAgICAgcmV0dXJuIHRydWU7CiAgICB9Cn0K\n",
-       * "encoding":"base64",
-       * "_links": {
-       * "self":
-       * "https://api.github.com/repos/elastic/elasticsearch/contents/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java?ref\u003dfeab123ba400b150f3dcd04dd27cf57474b70d5a",
-       * "git":"https://api.github.com/repos/elastic/elasticsearch/git/blobs/ffde1ec556a0d2936a3dc03d6ab27129854ad561",
-       * "html":
-       * "https://github.com/elastic/elasticsearch/blob/feab123ba400b150f3dcd04dd27cf57474b70d5a/x-pack/plugin/sql/sql-cli/src/main/java/org/elasticsearch/xpack/sql/cli/command/ClearScreenCliCommand.java"
-       * }
-       * }
-       * }
-       */
     }
 
   }
